@@ -4,7 +4,6 @@ import Home from './screens/Home';
 import Notification from './screens/Notification';
 import { Image, View } from 'react-native';
 import { Feather } from '@expo/vector-icons'; 
-import { Ionicons } from '@expo/vector-icons';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,7 +22,6 @@ const App = ()=> {
           headerStyle: {backgroundColor:'#ffff'}, 
           headerRight : ()=>
           <View style={{flexDirection:'row', columnGap:20}}>
-              <Ionicons name="notifications-outline" size={24} color="black"  />
               <Feather name="search" size={24} color="grey"/>
               <Image style={{height:25, width:28, tintColor:'grey'}} source={require('./assets/icons/shopping-basket.png')}/>
               <Feather name="user" size={24} color="black" />
